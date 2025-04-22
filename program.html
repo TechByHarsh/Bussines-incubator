@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Incubator Programs</title>
+    <link rel="stylesheet" href="program.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <section id="programs">
+        <nav>
+            <div class="logo">IncubatorHub</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#programs">Programs</a></li>
+                <li><a href="#resources">Resources</a></li>
+                <li><a href="#mentorship">Mentorship</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" data-aos="fade-up">
+            <h1>Our Incubation Programs</h1>
+            <p>Transforming Ideas into Successful Businesses</p>
+        </section>
+
+        <section class="programs" id="programs">
+            <div class="program-card" data-aos="fade-right">
+                <div class="program-image">
+                    <img src="image/img3.jpeg" alt="Startup Program">
+                </div>
+                <div class="program-content">
+                    <h2>Startup Accelerator</h2>
+                    <p>Launch your business with our comprehensive startup program. Get mentorship, funding, and resources.</p>
+                    <button class="learn-more">Learn More</button>
+                </div>
+            </div>
+
+            <div class="program-card" data-aos="fade-left">
+                <div class="program-image">
+                    <img src="image/img4.jpeg" alt="Mentorship Program">
+                </div>
+                <div class="program-content">
+                    <h2>Mentorship Program</h2>
+                    <p>Connect with industry experts and receive personalized guidance for your business growth.</p>
+                    <button class="learn-more">Learn More</button>
+                </div>
+            </div>
+
+            <div class="program-card" data-aos="fade-right">
+                <div class="program-image">
+                    <img src="image/img5.jpeg" alt="Workshop Program">
+                </div>
+                <div class="program-content">
+                    <h2>Business Workshops</h2>
+                    <p>Attend our specialized workshops to enhance your business skills and knowledge.</p>
+                    <button class="learn-more">Learn More</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta" data-aos="zoom-in">
+            <h2>Ready to Start Your Journey?</h2>
+            <p>Join our programs and take your business to the next level</p>
+            <button class="apply-now">Apply Now</button>
+        </section>
+    </main>
+
+    <!-- Application Form Modal -->
+    <div class="modal" id="applicationModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Application Form</h2>
+            <form id="applicationForm">
+                <div class="form-group">
+                    <label for="fullName">Full Name</label>
+                    <input type="text" id="fullName" name="fullName" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="company">Company Name (if applicable)</label>
+                    <input type="text" id="company" name="company">
+                </div>
+                
+                <div class="form-group">
+                    <label for="program">Select Program</label>
+                    <select id="program" name="program" required>
+                        <option value="">Choose a program</option>
+                        <option value="startup">Startup Accelerator</option>
+                        <option value="mentorship">Mentorship Program</option>
+                        <option value="workshop">Business Workshops</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="businessStage">Business Stage</label>
+                    <select id="businessStage" name="businessStage" required>
+                        <option value="">Select your business stage</option>
+                        <option value="idea">Idea Stage</option>
+                        <option value="early">Early Stage</option>
+                        <option value="growth">Growth Stage</option>
+                        <option value="established">Established</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="description">Business Description</label>
+                    <textarea id="description" name="description" rows="4" required></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="goals">What are your goals?</label>
+                    <textarea id="goals" name="goals" rows="3" required></textarea>
+                </div>
+                
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label for="terms">I agree to the terms and conditions</label>
+                </div>
+                
+                <div class="form-buttons">
+                    <button type="submit" class="submit-btn">Submit Application</button>
+                    <button type="button" class="cancel-btn">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: info@businessincubator.com</p>
+                <p>Phone: (555) 123-4567</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Business Incubator. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="program.js"></script>
+</section>
+</body>
+</html> 

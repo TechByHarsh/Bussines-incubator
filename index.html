@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Business Incubator Platform</title>
+  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="profile.css">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script>
+    (function() {
+      emailjs.init("zMf3Yqk508ERlLJT4");
+    })();
+  </script>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <div class="logo">IncubatorHub</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+    <li><a href="program.html">Programs</a></li>
+    <li><a href="resource.html">Resource</a></li>
+    <li><a href="mentorship.html">Mentorship</a></li>
+      </ul>
+      <div class="nav-icons">
+        <a href="#profile" class="nav-icon"><i class="fas fa-user"></i></a>
+        <a href="#contact" class="nav-icon"><i class="fas fa-envelope"></i></a>
+        <a href="#logout" class="nav-icon"><i class="fas fa-sign-out-alt"></i></a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <h2>All-in-One</h2>
+    <h1>Startup Incubation Platform</h1>
+    <p>
+      Empowering early-stage startups with mentorship, resources, and funding.<br>
+      From ideation to growth, we accelerate your journey with purpose.
+    </p>
+    <button class="cta-button" onclick="toggleForm()">Join the Journey →</button>
+
+
+    <div class="features">
+      <div class="feature-tag">✔ Expert Mentors</div>
+      <div class="feature-tag">✔ Funding Access</div>
+      <div class="feature-tag">✔ Collaborative Space</div>
+    </div>
+  </section>
+
+  <!-- Program Section -->
+<section class="programs" id="programs">
+  <h2 class="section-title">Our Programs</h2>
+  <div class="program-cards">
+    
+    <div class="program-card">
+      <div class="program-icon">💡</div>
+      <h3>Ideate</h3>
+      <p>Turn your vision into reality. We help you shape raw ideas into executable business plans through expert-led sessions.</p>
+      <a href="program.html#programs" class="learn-more">Learn More →</a>
+    </div>
+
+    <div class="program-card">
+      <div class="program-icon">🛠️</div>
+      <h3>Build</h3>
+      <p>Develop MVPs and prototypes with technical mentorship, design resources, and product development support.</p>
+      <a href="program.html#programs" class="learn-more">Learn More →</a>
+    </div>
+
+    <div class="program-card">
+      <div class="program-icon">🚀</div>
+      <h3>Accelerate</h3>
+      <p>Fuel your growth with pitch training, traction strategies, and connections to potential partners and customers.</p>
+      <a href="program.html#programs" class="learn-more">Learn More →</a>
+    </div>
+
+    <div class="program-card">
+      <div class="program-icon">💰</div>
+      <h3>Fund</h3>
+      <p>Get funding-ready with financial guidance and access to angel investors, VCs, and grant opportunities.</p>
+      <a href="program.html#programs" class="learn-more">Learn More →</a>
+    </div>
+
+  </div>
+</section>
+
+<section class="image-section">
+  <div class="text-content">
+    <h2>Our Strengths</h2>
+    <p>Empowering Visionaries, Shaping Tomorrow</p>
+    <p>We partner with bold startups driving breakthrough innovations. Join us to co-create a dynamic ecosystem for the future of entrepreneurship.</p>
+  </div>
+  <div class="image-wrapper">
+    <img src="images/heroimage.jpeg" alt="Our Strengths Image">
+  </div>
+</section>
+
+<!-- Resource Section -->
+<section id="resources" class="resources-section">
+  <h3 class="impact-subtitle">Our Impact</h3>
+  <h2 class="impact-title">Our Impact on The Innovation Ecosystem</h2>
+  <div class="impact-grid">
+    <div class="impact-card">
+      <i class="icon">👥</i>
+      <h3>2,000+</h3>
+      <p>Actively Engaging Startups</p>
+    </div>
+    <div class="impact-card">
+      <i class="icon">💰</i>
+      <h3>$1.94B</h3>
+      <p>Funding Raised by Startups</p>
+    </div>
+    <div class="impact-card">
+      <i class="icon">📋</i>
+      <h3>100+</h3>
+      <p> International Programs</p>
+    </div>
+    <div class="impact-card">
+      <i class="icon">✅</i>
+      <h3>100+</h3>
+      <p>Valueable Partners</p>
+    </div>
+    <div class="impact-card">
+      <i class="icon">📅</i>
+      <h3>1,000+</h3>
+      <p> International Events</p>
+    </div>
+    <div class="impact-card">
+      <i class="icon">🏢</i>
+      <h3>110+</h3>
+      <p>Corporate Engagements</p>
+    </div>
+    <div class="impact-card">
+      <i class="icon">🌍</i>
+      <h3>400+</h3>
+      <p>International Connects</p>
+    </div>
+    <div class="impact-card">
+      <i class="icon">🧑‍🏫</i>
+      <h3>200+</h3>
+      <p> Worldwide Mentors</p>
+    </div>
+  </div>
+</section>
+
+<section class="customers-section">
+  <h2 class="customers-heading">
+    Powering the world's best product teams.<br>
+    From next-gen startups to established enterprises.
+  </h2>
+
+  <div class="card-container">
+    <div class="customer-card"><i class="fas fa-rocket"></i><p>Startups</p></div>
+    <div class="customer-card"><i class="fas fa-landmark"></i><p>Government</p></div>
+    <div class="customer-card"><i class="fas fa-building"></i><p>Corporates</p></div>
+    <div class="customer-card"><i class="fas fa-globe"></i><p>International</p></div>
+    <div class="customer-card"><i class="fas fa-handshake"></i><p>Partners</p></div>
+    <div class="customer-card"><i class="fas fa-users"></i><p>Community</p></div>
+
+    <div class="overlay-button">
+      <button id="meetStartupsBtn">Meet Our Incubated Startups</button>
+    </div>
+  </div>
+</section>
+
+<!-- Mentorship Section -->
+
+<section class="mentor-hero" id="mentorship">
+  <div class="mentor-content">
+    <h2>Guidance that Fuels Growth</h2>
+    <p>
+      Tap into the expertise of seasoned entrepreneurs, investors, and industry leaders. 
+      Our mentorship program connects you with the right minds to refine your vision, 
+      overcome challenges, and accelerate your startup journey.
+    </p>
+  </div>
+  <div class="mentor-image">
+    <img src="images/image1.jpeg" alt="Mentorship guidance">
+  </div>
+</section>
+
+<!-- Footer Section -->
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-brand">
+      <h2>IncubatorHub</h2>
+      <p>Empowering the next generation of innovators with guidance, funding, and opportunity.</p>
+    </div>
+
+    <div class="footer-links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#programs">Programs</a></li>
+        <li><a href="#resources">Resources</a></li>
+        <li><a href="#mentorship">Mentorship</a></li>
+        <li><a href="#login">Login</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-contact">
+      <h3>Contact Us</h3>
+      <p>Email: connect@incubatorhub.com</p>
+      <p>Phone: +91 12345 67890</p>
+      <p>Hyderabad, India</p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 IncubatorHub. All rights reserved.</p>
+  </div>
+</footer>
+
+
+<!-- Login Modal -->
+<div id="loginModal" class="modal">
+  <div class="modal-content">
+    <h2>Login to IncubatorHub</h2>
+    <form action="login.php" method="POST">
+      <input type="text" name="fullname" placeholder="Full Name" required />
+      <input type="email" name="email" placeholder="Email (optional)" />
+      <input type="text" name="username" placeholder="Username" required />
+      <input type="password" name="password" placeholder="Password" required />
+
+      <div class="form-options">
+        
+        <a href="#" class="forgot-link">Forgot password?</a>
+      </div>
+
+      <button type="submit" name="login">Login</button>
+    </form>
+  </div>
+</div>
+
+<script>
+  const loginBtn = document.querySelector('.login-btn');
+  const modal = document.getElementById('loginModal');
+
+  loginBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    modal.style.display = 'flex';
+    document.body.classList.add('modal-open');
+  });
+
+  window.addEventListener('click', (e) => {
+    if (e.target === modal) {
+      modal.style.display = 'none';
+      document.body.classList.remove('modal-open');
+    }
+  });
+</script>
+
+
+<!-- Join Journey Modal -->
+<div class="form-overlay" id="formOverlay">
+  <div class="application-form">
+    <h2>Application Form</h2>
+    <button class="close-btn">&times;</button>
+    <form id="application-form">
+      <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+      </div>
+      <div class="form-group">
+        <label for="program">Select Program</label>
+        <select id="program" name="program" required>
+          <option value="" disabled selected>Select Program</option>
+          <option value="accelerator">Startup Accelerator</option>
+          <option value="mentorship">Mentorship Program</option>
+          <option value="workshops">Workshops</option>
+          <option value="networking">Networking Events</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="message">Tell us about your startup idea</label>
+        <textarea id="message" name="message" placeholder="Enter your message" rows="4"></textarea>
+      </div>
+      <button type="submit" class="submit-btn">Submit Application</button>
+    </form>
+    <div class="form-footer">
+      <p>We will get back to you as soon as possible!</p>
+    </div>
+  </div>
+</div>
+
+<!-- Success Stories Modal -->
+<div id="successStoriesModal" class="success-stories-modal">
+  <div class="success-stories-content">
+    <span class="close-stories">&times;</span>
+    <h2>Success Stories</h2>
+    <div class="stories-container">
+      <div class="stories-wrapper">
+        <div class="story-card">
+          <img src="images/startup1.jpg" alt="Sarah Chen">
+          <h3>Sarah Chen</h3>
+          <p class="story-title">Founder, HealthTech AI</p>
+          <p class="story-quote">"From a medical student with an idea to a $15M funded startup"</p>
+          <p class="story-details">Sarah developed an AI-powered diagnostic tool that helps doctors identify rare diseases. With our mentorship and $500K seed funding, she expanded to 50+ hospitals and raised $15M in Series A funding. Her technology has already helped diagnose over 10,000 patients with rare conditions, reducing diagnosis time from an average of 7 years to just 3 months. The platform now integrates with major hospital systems across 12 countries. Sarah credits our incubator's medical technology experts for helping her navigate complex regulatory requirements and connect with key opinion leaders in the healthcare industry. Her company now employs 45 people and has been featured in major medical journals and tech publications.</p>
+        </div>
+        <div class="story-card">
+          <img src="images/startup2.jpg" alt="Marcus Johnson">
+          <h3>Marcus Johnson</h3>
+          <p class="story-title">CEO, GreenEnergy Solutions</p>
+          <p class="story-quote">"From a garage project to serving 100+ cities"</p>
+          <p class="story-details">Marcus started with a solar-powered water purification system in his garage. Our technical mentorship and connections helped him scale to 100+ cities, creating 500+ jobs and saving 1M+ gallons of water daily. His innovative approach to combining solar technology with water purification has won multiple sustainability awards. The company's flagship product, the SolarPure, can purify up to 5,000 liters of water daily using only solar energy, making it ideal for remote communities without reliable electricity. Through our network, Marcus secured partnerships with major NGOs and government agencies, leading to deployment in disaster-stricken areas and developing nations. His technology has been recognized by the United Nations for its contribution to sustainable development goals. Today, GreenEnergy Solutions is valued at over $25M and has expanded into 15 countries.</p>
+        </div>
+        <div class="story-card">
+          <img src="images/startup3.jpg" alt="Priya Patel">
+          <h3>Priya Patel</h3>
+          <p class="story-title">Founder, EduTech Global</p>
+          <p class="story-quote">"From teaching 10 students to reaching 1M+ learners"</p>
+          <p class="story-details">Priya's personalized learning platform started with just 10 students. Through our accelerator program, she developed a scalable model that now serves 1M+ students across 30 countries, with a 95% completion rate. Her adaptive learning algorithm, which was refined with the help of our AI specialists, creates personalized learning paths for each student based on their learning style, pace, and goals. The platform has shown remarkable results, with students achieving an average grade improvement of 23% after just three months of use. EduTech Global has partnered with over 200 educational institutions and received recognition from the World Economic Forum as a technology pioneer. Priya's vision of making quality education accessible to everyone has been supported by our incubator's network of educators and investors. The company has raised $8M in funding and is expanding into new markets with localized content in 12 languages.</p>
+        </div>
+        <div class="story-card">
+          <img src="images/startup4.jpg" alt="David Kim">
+          <h3>David Kim</h3>
+          <p class="story-title">CEO, FinTech Revolution</p>
+          <p class="story-quote">"From a college project to processing $100M+ monthly"</p>
+          <p class="story-details">David's peer-to-peer payment solution began as a college project. Our mentorship helped him navigate regulatory challenges and secure partnerships with major banks. Now processing $100M+ in transactions monthly. His platform, PayEase, has revolutionized how small businesses handle payments, reducing transaction fees by 60% compared to traditional payment processors. The company's innovative approach to financial inclusion has helped over 50,000 previously unbanked individuals access financial services for the first time. Through our incubator's connections, David secured meetings with regulatory bodies that helped shape favorable policies for fintech innovation. His technology has been recognized for its security features, with zero reported security incidents since launch. The company has expanded to 25 countries and recently launched a blockchain-based remittance service that reduces international transfer costs by 80%. David credits our incubator's fintech experts for helping him understand complex regulatory environments and build a scalable infrastructure.</p>
+        </div>
+        <div class="story-card">
+          <img src="images/startup5.jpg" alt="Aisha Rahman">
+          <h3>Aisha Rahman</h3>
+          <p class="story-title">Founder, AgriTech Innovations</p>
+          <p class="story-quote">"From a small farm to revolutionizing agriculture"</p>
+          <p class="story-details">Aisha's smart irrigation system started on her family's farm. With our support, she developed IoT sensors that help farmers reduce water usage by 40%. Now deployed across 10,000+ farms in developing countries. Her technology, FarmSmart, combines soil moisture sensors, weather data, and machine learning to optimize irrigation schedules, resulting in a 30% increase in crop yields while using 40% less water. The system is solar-powered and works offline, making it ideal for remote agricultural areas. Through our incubator's agricultural experts, Aisha refined her product to meet the specific needs of smallholder farmers in developing countries. Her company has created over 1,000 jobs in rural areas, primarily employing women who previously had limited economic opportunities. The technology has been recognized by the Food and Agriculture Organization for its contribution to sustainable farming practices. Aisha's vision of making precision agriculture accessible to small farmers has been supported by our network of agricultural cooperatives and development agencies.</p>
+        </div>
+        <div class="story-card">
+          <img src="images/startup6.jpg" alt="Carlos Rodriguez">
+          <h3>Carlos Rodriguez</h3>
+          <p class="story-title">CEO, Urban Mobility</p>
+          <p class="story-quote">"From a bike-sharing idea to transforming urban transport"</p>
+          <p class="story-details">Carlos's electric bike-sharing platform began with 50 bikes in one city. Our connections with city officials and investors helped him expand to 20 cities with 10,000+ bikes, reducing carbon emissions by 5,000 tons annually. His company, CityRide, has revolutionized urban transportation by making electric bikes accessible and affordable for daily commuters. The platform's innovative approach to battery swapping has solved the range anxiety problem that plagues many electric vehicle sharing services. Through our incubator's urban planning experts, Carlos developed a data-driven approach to bike placement that maximizes usage while minimizing operational costs. The company has partnered with 15 municipal governments to integrate their service into public transportation networks, creating a seamless multi-modal commuting experience. CityRide's technology has reduced traffic congestion by 12% in the cities where it operates and has been recognized for its contribution to reducing air pollution. Carlos credits our incubator's connections with city officials for helping him navigate complex permitting processes and secure prime locations for bike stations.</p>
+        </div>
+      </div>
+      <div class="stories-nav">
+        <button class="prev"><i class="fas fa-chevron-left"></i></button>
+        <button class="next"><i class="fas fa-chevron-right"></i></button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Program Detail Modals -->
+<div id="ideateModal" class="modal program-modal">
+  <div class="modal-content program-content">
+    <span class="close-program">&times;</span>
+    <div class="program-header">
+      <div class="program-icon">💡</div>
+      <h2>Ideate Program</h2>
+    </div>
+    <div class="program-details">
+      <div class="program-section">
+        <h3>What You'll Learn</h3>
+        <ul>
+          <li>Market Research & Validation</li>
+          <li>Business Model Canvas</li>
+          <li>Value Proposition Design</li>
+          <li>Customer Discovery</li>
+          <li>Competitive Analysis</li>
+        </ul>
+      </div>
+      <div class="program-section">
+        <h3>Program Features</h3>
+        <ul>
+          <li>12-week intensive program</li>
+          <li>1-on-1 mentorship sessions</li>
+          <li>Weekly workshops</li>
+          <li>Access to industry experts</li>
+          <li>Networking events</li>
+        </ul>
+      </div>
+      <div class="program-section">
+        <h3>Outcomes</h3>
+        <ul>
+          <li>Validated business idea</li>
+          <li>Detailed business plan</li>
+          <li>Market entry strategy</li>
+          <li>Investor-ready pitch deck</li>
+          <li>Industry connections</li>
+        </ul>
+      </div>
+    </div>
+    <button class="apply-now-btn">Apply Now</button>
+  </div>
+</div>
+
+<div id="buildModal" class="modal program-modal">
+  <div class="modal-content program-content">
+    <span class="close-program">&times;</span>
+    <div class="program-header">
+      <div class="program-icon">🛠️</div>
+      <h2>Build Program</h2>
+    </div>
+    <div class="program-details">
+      <div class="program-section">
+        <h3>Development Support</h3>
+        <ul>
+          <li>Technical Architecture Design</li>
+          <li>MVP Development</li>
+          <li>UI/UX Design</li>
+          <li>Quality Assurance</li>
+          <li>Cloud Infrastructure Setup</li>
+        </ul>
+      </div>
+      <div class="program-section">
+        <h3>Resources Provided</h3>
+        <ul>
+          <li>Development Tools & Software</li>
+          <li>Cloud Credits</li>
+          <li>Design Resources</li>
+          <li>Technical Documentation</li>
+          <li>Testing Infrastructure</li>
+        </ul>
+      </div>
+      <div class="program-section">
+        <h3>Expert Guidance</h3>
+        <ul>
+          <li>Technical Mentorship</li>
+          <li>Code Reviews</li>
+          <li>Architecture Consulting</li>
+          <li>Security Best Practices</li>
+          <li>Performance Optimization</li>
+        </ul>
+      </div>
+    </div>
+    <button class="apply-now-btn">Apply Now</button>
+  </div>
+</div>
+
+<div id="accelerateModal" class="modal program-modal">
+  <div class="modal-content program-content">
+    <span class="close-program">&times;</span>
+    <div class="program-header">
+      <div class="program-icon">🚀</div>
+      <h2>Accelerate Program</h2>
+    </div>
+    <div class="program-details">
+      <div class="program-section">
+        <h3>Growth Strategy</h3>
+        <ul>
+          <li>Market Expansion</li>
+          <li>Customer Acquisition</li>
+          <li>Revenue Optimization</li>
+          <li>Team Scaling</li>
+          <li>Partnership Development</li>
+        </ul>
+      </div>
+      <div class="program-section">
+        <h3>Support Services</h3>
+        <ul>
+          <li>Pitch Training</li>
+          <li>Investor Relations</li>
+          <li>Media Exposure</li>
+          <li>Strategic Partnerships</li>
+          <li>International Expansion</li>
+        </ul>
+      </div>
+      <div class="program-section">
+        <h3>Resources</h3>
+        <ul>
+          <li>Investor Network Access</li>
+          <li>Industry Connections</li>
+          <li>Marketing Support</li>
+          <li>Legal Advisory</li>
+          <li>HR Consulting</li>
+        </ul>
+      </div>
+    </div>
+    <button class="apply-now-btn">Apply Now</button>
+  </div>
+</div>
+
+<div id="fundModal" class="modal program-modal">
+  <div class="modal-content program-content">
+    <span class="close-program">&times;</span>
+    <div class="program-header">
+      <div class="program-icon">💰</div>
+      <h2>Fund Program</h2>
+    </div>
+    <div class="program-details">
+      <div class="program-section">
+        <h3>Funding Options</h3>
+        <ul>
+          <li>Seed Funding</li>
+          <li>Series A Preparation</li>
+          <li>Angel Investment</li>
+          <li>VC Connections</li>
+          <li>Grant Opportunities</li>
+        </ul>
+      </div>
+      <div class="program-section">
+        <h3>Financial Guidance</h3>
+        <ul>
+          <li>Financial Modeling</li>
+          <li>Valuation Analysis</li>
+          <li>Due Diligence Prep</li>
+          <li>Term Sheet Review</li>
+          <li>Investment Strategy</li>
+        </ul>
+      </div>
+      <div class="program-section">
+        <h3>Support Services</h3>
+        <ul>
+          <li>Investor Matching</li>
+          <li>Pitch Deck Review</li>
+          <li>Financial Planning</li>
+          <li>Legal Support</li>
+          <li>Network Access</li>
+        </ul>
+      </div>
+    </div>
+    <button class="apply-now-btn">Apply Now</button>
+  </div>
+</div>
+
+<!-- Profile Section -->
+<div class="profile-section">
+    <div class="profile-container">
+        <div class="profile-header">
+            <div class="profile-avatar">
+                <img src="images/profile.jpg" alt="Profile Picture">
+            </div>
+            <div class="profile-info">
+                <h1 class="profile-name">John Doe</h1>
+                <p class="profile-title">Entrepreneur & Innovator</p>
+                <div class="profile-stats">
+                    <div class="stat-item">
+                        <div class="stat-value">15</div>
+                        <div class="stat-label">Projects</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">8</div>
+                        <div class="stat-label">Success Stories</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">5</div>
+                        <div class="stat-label">Years Experience</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="profile-content">
+            <h2 class="profile-section-title">About Me</h2>
+            <p class="profile-bio">
+                Passionate entrepreneur with a track record of successful business ventures and innovative solutions. 
+                Specializing in technology and sustainable business practices. Committed to mentoring aspiring entrepreneurs 
+                and contributing to the startup ecosystem. Always eager to learn and adapt to new challenges.
+            </p>
+            <div class="profile-actions">
+                <button class="profile-button edit-profile">Edit Profile</button>
+                <button class="profile-button close-profile">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+</body>
+<script src="index.js"></script>
+<script src="script.js"></script>
+
+</html>
